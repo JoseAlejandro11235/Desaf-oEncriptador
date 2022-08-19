@@ -1,0 +1,46 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+        
+    </head>
+    <body>
+        <header>
+            <img src="imagenes/Vector.png" alt="Vector de alura" class="vector-alura">
+        </header>
+        <main>
+            <div>
+                <textarea placeholder="Ingrese el texto aquí" class="campo-texto" id="texto-recibido"></textarea>
+            </div>
+            
+            <div class="mensaje-advertencia">
+                <img src="imagenes/simbolo.png" alt="simbolo de advertencia" class="simbolo">
+                <p class="mensaje-minusculas">Solo letras minúsculas y sin acentos</p>
+            </div>
+            
+            <button class="encriptar" id="encriptar">Encriptar</button>
+            <button class="desencriptar" id="desencriptar">Desencriptar</button>
+        
+            <div class="devolver-texto" id="seccion-devolver">
+                <img src="imagenes/Muñeco.png" alt="muñeco del cuadro que devuelve texto" class="munheco" id="munheco">
+                <div class="textos-previos" id="textos-previos">
+                    <p class="No-found-message">Ningún mensaje fue encontrado</p>
+                    <p class="pedir-texto">Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+            </div>
+
+            <div class="mostrar-resultado" id="mostrar-resultado">
+                <textarea id="mostrar-texto" class="mostrar-texto"></textarea>
+                <button class="boton-copiar" id="boton-copiar">Copiar</button>
+            </div>
+
+        </main>
+        
+        <script src="script.js"></script>
+    </body>
+</html>
+
